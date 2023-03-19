@@ -243,8 +243,17 @@ section{
   justify-content: center;
 }
 
+.intro__container div{
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .intro__title{
-  max-width: 1010px;
+  position: relative;
+  max-width: 800px;
+  transition: right .3s ease-in;
 }
 
 .intro__subtitle{
@@ -257,9 +266,9 @@ section{
   position: absolute;
   max-width: 570px;
   top: 450px;
-  right: -125px;
+  right: -200px;
   z-index: 11;
-  transition: right .3s;
+  transition: right .3s ease-in;
 }
 
 .hand__2{
@@ -268,6 +277,7 @@ section{
   left: 50px;
   bottom: -50px;
   z-index: 11;
+  transition: transform .9s;
 }
 
 .scroll__container{
@@ -602,17 +612,13 @@ section{
 }
 
 /*------Animation------*/
-.nav__link.anim{
-  opacity: 0;
-  transition: 0.7s;
-  transform: translateY(-100px);
+.hand__2.anim{
+  transform: translateX(-70px);
 }
-.nav__link.anim-show{
-  opacity: 1;
+.hand__2.anim-show{
   transform: translateY(0);
 }
 /*------Animation------*/
-
 
 /*------Media------*/
 @media (max-width: 1920px){
@@ -640,7 +646,7 @@ section{
     top: calc(8px + (12 - 8) * ((100vw - 320px) / (1920 - 320)));
   }
   .intro__title{
-    max-width: calc(275px + (1010 - 275) * ((100vw - 320px) / (1920 - 320)));
+    max-width: calc(275px + (800 - 275) * ((100vw - 320px) / (1920 - 320)));
   }
   .intro__subtitle{
     font-size: calc(35px + (130 - 35) * ((100vw - 320px) / (1920 - 320)));
