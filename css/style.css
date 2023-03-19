@@ -79,8 +79,11 @@ section{
 .section-header{
   width: 100%;
   position: fixed;
+  left: 0;
+  right: 0;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(3px);
 }
 
 .header{
@@ -360,8 +363,6 @@ section{
   background-size: cover;
 }
 
-}
-
 .price__title{
   font-size: 60px;
   font-weight: 700;
@@ -467,16 +468,20 @@ section{
   max-width: 630px;
 }
 
-.section-contact{
-  position: relative;
-  overflow: hidden;
+.contact__container{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
-.contact__container{
-  position: relative;
-  width: 660px;
-  height: 1080px;
-  margin-left: auto;
+.contact__container .contact__container-blocks{
+  width: 49%;
+}
+
+@media (min-width: 1550px){
+  .contact__container-blocks .title{
+    padding-top: 0;
+  }
 }
 
 .contact__text{
@@ -492,10 +497,6 @@ section{
   font-weight: 300;
   color: #000;
   margin-bottom: 90px;
-}
-
-.form{
-  width: 660px;
 }
 
 .form__input{
@@ -534,28 +535,31 @@ section{
   color: #000;
 }
 
-.contact__media{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 1080px;
-  width: auto;
+.contact__media-banner{
+  width: 100%;
+  height: auto;
 }
 
-.contact__media1{
+.contact__media-ph{
+  pointer-events: none;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   width: 300px;
-  bottom: -75px;
-  right: -110px;
+  height: auto;
+  bottom: -56px;
+  right: -40px;
 }
 
-.social__container .social__link:not(:last-child){
-  margin-right: 40px;
+@media (min-width: 460px){
+  .social__container .social__link:not(:last-child){
+    margin-right: 40px;
+  }
 }
 
 .social__container{
+  position: relative;
   margin-top: 150px;
+  padding-bottom: calc(10px + (40 - 10) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .social__link{
@@ -700,10 +704,6 @@ section{
     font-size:  calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
     margin-bottom: calc(40px + (90 - 40) * ((100vw - 320px) / (1920 - 320)));
   }
-  .contact__container{
-    width: calc(290px + (660 - 290) * ((100vw - 320px) / (1920 - 320)));
-    height: calc(568px + (1080 - 568) * ((100vw - 320px) / (1920 - 320)));
-  }
   .lable__input{
     font-size:  calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
   }
@@ -712,10 +712,7 @@ section{
     padding:  calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
     height: calc(60px + (80 - 60) * ((100vw - 320px) / (1920 - 320)));
   }
-  .form{
-    width: calc(290px + (660 - 290) * ((100vw - 320px) / (1920 - 320)));
-  }
-  .contact__media1{
+  .contact__media-ph{
     width: calc(200px + (300 - 200) * ((100vw - 320px) / (1920 - 320)));
   }
   .social__link{
@@ -768,27 +765,15 @@ section{
 }
 
 @media (max-width: 1550px){
-  .contact__container{
-    margin: 0 auto;
-  }
   .contact__media{
     position: relative;
     margin: 0 auto;
   }
-  .section-contact{
-    text-align: center;
-  }
-  .form{
-    text-align: left;
-  }
   .social__container{
     margin-top: 50px;
   }
-  .contact__container{
-    height: 870px;
-  }
-  .contact__media1{
-    right: calc(-48px + (-160 - -48) * ((100vw - 320px) / (1550 - 320)));
+  .contact__media-ph{
+    right: calc(-60px + (-40 - -60) * ((100vw - 320px) / (1550 - 320)));
   }
 }
 
@@ -807,7 +792,17 @@ section{
   .line_3{
     display: none;
   }
-  
+}
+
+@media (max-width: 1150px){
+  .contact__container{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contact__container .contact__container-blocks:last-child{
+    position: relative;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 780px){
@@ -819,6 +814,12 @@ section{
   }
   .price__container .media__container:not(:last-child){
     margin-bottom: 30px;
+  }
+  .contact__container .contact__container-blocks{
+    width: 100%;
+  }
+  .contact__container .contact__container-blocks:last-child{
+    padding: 0 15px;
   }
 }
 
@@ -832,7 +833,15 @@ section{
   .hand__1{
     display: none;
   }
+  .burger__nav a{
+    padding: 10px 0;
+  }
 }
 
-
+@media (max-width: 460px){
+  .social__link{
+    display: block;
+    margin-bottom: 10px;
+  }
+}
 /*------Media------*/
