@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>For Real Estate</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<div id="intro" class="page">
+		<section class="section-header">
+			<div class="container">
+				<header class="header">
+					<picture>
+						<source data-scroll="#intro" class="logo" srcset="img/logo.webp" type="image/webp">
+						<img data-scroll="#intro" class="logo" src="img/logo.png" alt="">
+					</picture>
+					<nav class="nav">
+						<a data-scroll="#ph" class="nav__link" href="#">Photo</a>
+						<a data-scroll="#ph" class="nav__link" href="#">Video</a>
+						<a data-scroll="#contact" class="nav__link" href="#">Call us</a>
+						<a data-scroll="#price" class="nav__link marker" href="#">Pricing</a>
+					</nav>
+					<span class="burger">
+						<span></span>
+					</span>
+				</header>
+			</div>
+		</section>
+		<nav class="burger__nav">
+			<div>
+				<a data-scroll="#ph" class="nav__link" href="#">Photo</a>
+				<a data-scroll="#ph" class="nav__link" href="#">Video</a>
+				<a data-scroll="#contact" class="nav__link" href="#">Call us</a>
+				<a data-scroll="#price" class="nav__link marker" href="#">Pricing</a>
+			</div>
+		</nav>
+		<section class="section-intro">
+			<div class="video">
+				<video class="video__media" autoplay muted loop src="img/video.mp4"></video>
+			</div>
+			<div class="container">
+				<div class="intro__container">
+					<div>
+						<picture>
+							<source class="intro__title" srcset="img/intro_title.webp" type="image/webp">
+							<img class="intro__title"src="img/intro_title.png" alt="">
+						</picture>
+						<h1 class="intro__subtitle">For Real Estate</h1>
+					</div>
+				</div>
+			</div>
+			<picture>
+				<source class="hand__1" srcset="img/hand_1.webp" type="image/webp">
+				<img class="hand__1"src="img/hand_1.png" alt="">
+			</picture>
+			<picture>
+				<source class="hand__2" srcset="img/hand_2.webp" type="image/webp">
+				<img class="hand__2"src="img/hand_2.png" alt="">
+			</picture>
+			<div class="scroll__container">
+				<div class="scroll__box">
+					<img class="scroll" src="img/scroll.svg" alt="">
+					<img data-scroll="#ph" class="arrow" src="img/arrow.svg" alt="">
+				</div>
+			</div>
+		</section>
+		<section id="price" class="section-price">
+			<div class="container">
+				<h2 class="title">Price</h2>
+				<div class="price__container">
+					<div class="media__container photo">
+						<p class="price__title">Photo</p>
+						<div class="price__price__continer">
+							<p class="price__text__title">Price</p>
+							<div class="price__price">
+								<p class="price__text">from to 300</p>
+								<picture>
+									<source class="dollar__media" srcset="img/dollar_media.webp" type="image/webp">
+									<img class="dollar__media"src="img/dollar_media.png" alt="">
+								</picture>
+							</div>
+							<button class="btn">view</button>
+						</div>
+					</div>
+					<img class="line_3" src="img/line_3.svg" alt="">
+					<div class="media__container vid">
+						<p class="price__title">Video</p>
+						<div class="price__price__continer">
+							<p class="price__text__title">Price</p>
+							<div class="price__price">
+								<p class="price__text">from to 300</p>
+								<picture>
+									<source class="dollar__media" srcset="img/dollar_media.webp" type="image/webp">
+									<img class="dollar__media"src="img/dollar_media.png" alt="">
+								</picture>
+							</div>
+							<button class="btn">view</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="ph" class="section-welcom">
+			<div class="container">
+				<h2 class="title">Welcome to Cali Photo Estate</h2>
+				<div class="welcom__container">
+					<div class="welcom__left">
+						<p class="welcom__text">Cali Photo Estate provides all inclusive (photo, video, post production) services for expected results. Every design plan receives precise operation according to the project's needs. Reach us to discuss details by filling out the form below.</p>
+						<picture>
+							<source class="welcom__icon" srcset="img/welcom_icon.webp" type="image/webp">
+							<img class="welcom__icon"src="img/welcom_icon.png" alt="">
+						</picture>
+						<div class="icon2__container">
+							<img class="line__2" src="img/line_2.svg" alt="">
+						</div>
+					</div>
+					<div class="welcom__right">
+						<img class="welcom__media" src="img/welcom_ph.png" alt="">
+					</div>
+				</div>
+			</div>
+			<picture>
+				<source class="welcom__bg" srcset="img/welcom_bg.webp" type="image/webp">
+				<img class="welcom__bg"src="img/welcom_bg.png" alt="">
+			</picture>
+		</section>
+		<section id="contact" class="section-contact">
+			<div class="container">
+				<div class="contact__container">
+					<h2 class="title">Contact us</h2>
+					<p class="contact__text">CALIPHOTOESTATE</p>
+					<p class="contact__subtext">California, USA</p>
+					<form class="form">
+						<p class="lable__input">Name*</p>
+						<input class="form__input" type="text" name="name" placeholder="Type your answer here">
+						<p class="lable__input">Phone number*</p>
+						<input class="form__input" type="text" name="phone" placeholder="Type your answer here">
+						<button class="btn btn__form" type="button">Send</button>
+					</form>
+					<div class="social__container">
+						<a class="social__link" href="#">Facebook</a>
+						<a class="social__link" href="#">Instagram</a>
+						<a class="social__link" href="#">Mail</a>
+					</div>
+					<picture>
+						<source class="contact__media1" srcset="img/contact_media1.webp" type="image/webp">
+						<img class="contact__media1"src="img/contact_media1.png" alt="">
+					</picture>
+				</div>
+			</div>
+			<picture>
+				<source class="contact__media" srcset="img/contact_media.webp" type="image/webp">
+				<img class="contact__media" src="img/contact_media.jpg" alt="">
+			</picture>
+		</section>
+  	</div>
+  	<footer class="footer">
+		<div class="container">
+			<div class="footer__container">
+				<picture>
+					<source data-scroll="#intro" class="logo" srcset="img/logo.webp" type="image/webp">
+					<img data-scroll="#intro" class="logo" src="img/logo.png" alt="">
+				</picture>
+				<nav class="nav">
+					<a data-scroll="#ph" class="nav__link footer" href="#">Photo</a>
+					<a data-scroll="#ph" class="nav__link footer" href="#">Video</a>
+					<a data-scroll="#contact" class="nav__link footer" href="#">Call us</a>
+					<a data-scroll="" class="nav__link marker" href="#">Pricing</a>
+				</nav>	
+			</div>
+		</div>	
+	</footer>
+
+  	<script src="js/jquery.min.js"></script>
+	<script src="js/SmoothScroll"></script>
+	<script src="js/script.js"></script>
+	<script src="js/script_jq.js"></script>
+
+</body>
+</html>
