@@ -234,6 +234,10 @@ section{
   object-position: center;
 }
 
+.video__media::-webkit-media-controls {
+  display:none !important;
+}
+
 .intro__container{
   position: relative;
   z-index: 10;
