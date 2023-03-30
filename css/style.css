@@ -327,15 +327,6 @@ section{
   color: #000;
 }
 
-.title:after{
-  content: '';
-  background-image: url(../img/line_icon.svg);
-  background-size: cover;
-  display: block;
-  width: 165px;
-  height: 36px;
-}
-
 .price__container{
   margin: 100px 0;
   display: flex;
@@ -419,10 +410,6 @@ section{
   color: #fff;
 }
 
-.line_3{
-  height: 580px;
-}
-
 .section-welcom{
   position: relative;
   overflow: hidden;
@@ -451,11 +438,11 @@ section{
   max-width: 580px;
 }
 
-.icon2__container{
+.icon__container{
   text-align: right;
 }
 
-.line__2{
+.line-icon{
   width: 185px;
 }
 
@@ -485,13 +472,8 @@ section{
 }
 
 .contact__container .contact__container-blocks{
-  width: 49%;
-}
-
-@media (min-width: 1550px){
-  .contact__container-blocks .title{
-    padding-top: 0;
-  }
+  width: 50%;
+  margin: 0 auto;
 }
 
 .contact__text{
@@ -678,17 +660,13 @@ section{
     padding-top:  calc(85px + (120 - 85) * ((100vw - 320px) / (1920 - 320)));
     font-size:  calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
   }
-  .title:after{
-    width: calc(97px + (165 - 97) * ((100vw - 320px) / (1920 - 320)));
-    height: calc(20px + (36 - 20) * ((100vw - 320px) / (1920 - 320)));
-  }
   .welcom__icon{
     max-width: calc(260px + (580 - 260) * ((100vw - 320px) / (1920 - 320)));
   }
   .welcom__media{
     max-width: calc(280px + (630 - 280) * ((100vw - 320px) / (1920 - 320)));
   }
-  .line__2{
+  .line-icon{
     width: calc(80px + (185 - 80) * ((100vw - 320px) / (1920 - 320)));
   }
   .welcom__left{
@@ -731,9 +709,6 @@ section{
     width: calc(300px + (515 - 300) * ((100vw - 320px) / (1920 - 320)));
     height:  calc(414px + (690 - 414) * ((100vw - 320px) / (1920 - 320)));
     padding: 40px;
-  }
-  .line_3{
-    height: calc(300px + (580 - 300) * ((100vw - 320px) / (1920 - 320)));
   }
   .price__container {
     margin: calc(0px + (100 - 0) * ((100vw - 320px) / (1920 - 320))) 0;
@@ -794,9 +769,6 @@ section{
   }
   .welcom__right{
     text-align: center;
-  }
-  .line_3{
-    display: none;
   }
 }
 
